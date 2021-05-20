@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/poleTekstowe4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Pauza[ms]"
+        app:layout_constraintStart_toEndOf="@+id/poleEdycyjne1"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <EditText
+        android:id="@+id/poleEdycyjne2"
+        android:layout_width="91dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toEndOf="@+id/poleTekstowe4"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <EditText
+        android:id="@+id/poleEdycyjne1"
+        android:layout_width="72dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:inputType="number|textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <TextView
+        android:id="@+id/poleTekstowe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Liczba powtórzeń"
+        app:layout_constraintEnd_toStartOf="@+id/poleEdycyjne1"
+        app:layout_constraintTop_toBottomOf="@+id/pasekPostepu" />
+
+    <Button
+        android:id="@+id/przycisk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="przycisk1"
+        android:text="Wystartuj zadanie 1"
+        app:layout_constraintTop_toBottomOf="@+id/poleTekstowe1"
+        tools:layout_editor_absoluteX="159dp" />
+
+    <Button
+        android:id="@+id/przycisk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="przycisk2"
+        android:text="Wystartuj zadanie 1 "
+        app:layout_constraintTop_toBottomOf="@+id/poleTekstowe2"
+        tools:layout_editor_absoluteX="159dp" />
+
+    <ProgressBar
+        android:id="@+id/pasekPostepu"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="332dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@+id/przycisk2"
+        tools:layout_editor_absoluteX="30dp" />
+
+    <Button
+        android:id="@+id/przycisk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:onClick="przycisk3"
+        android:text="Wystartuj zad. 2 "
+        app:layout_constraintTop_toBottomOf="@+id/poleEdycyjne1"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/przycisk4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="44dp"
+        android:onClick="przycisk4"
+        android:text="Przerwij zad. 2 "
+        app:layout_constraintStart_toEndOf="@+id/przycisk3"
+        app:layout_constraintTop_toBottomOf="@+id/poleEdycyjne2" />
+
+    <TextView
+        android:id="@+id/poleTekstowe1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Brak wyniku"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <TextView
+        android:id="@+id/poleTekstowe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Brak wyniku"
+        app:layout_constraintTop_toBottomOf="@+id/przycisk1"
+        tools:layout_editor_absoluteX="210dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
